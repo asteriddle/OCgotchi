@@ -67,7 +67,7 @@ class OCGOTRing extends HTMLElement {
       .then((sites) => {
         // Find the current site in the data
         const matchedSiteIndex = sites.findIndex(
-          (site) => site.url === thisSite
+          (site) => site.websiteurl === thisSite
         );
         const matchedSite = sites[matchedSiteIndex];
 
