@@ -1,11 +1,14 @@
 [
   {
-    "websiteurl": "https://ocgotchi.neocities.org/",
-	"homeurl": "https://ocgotchi.neocities.org/webringassets/homes/dummy.png",
-    "charurl": "https://ocgotchi.neocities.org/webringassets/characters/dummy.png",
+    "websiteurl": "https://asteriddle.github.io/ocgotchi/",
+	"homeurl": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/homes/dummy%20home.png",
+    "charurl": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/characters/dummy%20character.png",
 	"sitename": "hungus",
 	"websiteblurb": "hear it hurgling",
-	"charm1": "https://ocgotchi.neocities.org/webringassets/charms/dummywarning.html",
-	"charm2": "https://ocgotchi.neocities.org/webringassets/charms/dummywarning.html"
+	"prevbutton": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/buttons/left%20button%20grey.png",
+	"randombutton": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/buttons/middle%20button%20grey.png",
+	"nextbutton": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/buttons/right%20button%20grey.png",
+	"charm1": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/charms/dummywarning.html",
+	"charm2": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/charms/dummywarning.html"
   }
 ]
