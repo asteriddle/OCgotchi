@@ -10,5 +10,29 @@
 	"nextbutton": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/buttons/right%20button%20grey.png",
 	"charm1": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/charms/dummywarning.html",
 	"charm2": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/charms/dummywarning.html"
+  },
+  {
+    "websiteurl": "https://asteriddle.github.io/ocgotchi/",
+	"homeurl": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/homes/dummy%20home.png",
+    "charurl": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/characters/dummy%20character.png",
+	"sitename": "turgle",
+	"websiteblurb": "hear it hurgling",
+	"prevbutton": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/buttons/left%20button%20grey.png",
+	"randombutton": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/buttons/middle%20button%20grey.png",
+	"nextbutton": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/buttons/right%20button%20grey.png",
+	"charm1": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/charms/dummywarning.html",
+	"charm2": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/charms/dummywarning.html"
+  },
+  {
+    "websiteurl": "https://asteriddle.github.io/ocgotchi/",
+	"homeurl": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/homes/dummy%20home.png",
+    "charurl": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/characters/dummy%20character.png",
+	"sitename": "bungus",
+	"websiteblurb": "hear it hurgling",
+	"prevbutton": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/buttons/left%20button%20grey.png",
+	"randombutton": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/buttons/middle%20button%20grey.png",
+	"nextbutton": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/buttons/right%20button%20grey.png",
+	"charm1": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/charms/dummywarning.html",
+	"charm2": "https://github.com/asteriddle/ocgotchi/raw/main/Assets/charms/dummywarning.html"
   }
 ]
