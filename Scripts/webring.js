@@ -1,5 +1,3 @@
-const DATA_FOR_OCGOTRING = `https://raw.githubusercontent.com/CSS-Tricks/css-webring/main/webring.json`;
-
 const template = document.createElement("template");
 template.innerHTML = `
 <style>
@@ -48,36 +46,36 @@ font-family: "MS PGothic", sans-serif;
 
 </style>
 
-<div class="OCGOTring">
-  <div id="copy">
-    
-  </div>
+<div class="OCGOTringcopy">
+
 </div>`;
 
 class OCGOTRing extends HTMLElement {
   connectedCallback() {
-    this.attachShadow({ mode: "open" });
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
+        this.attachShadow({
+            mode: "open"
+        });
 
-    // e.g. https://css-tricks.com
-    const thisSite = this.getAttribute("site");
+        this.shadowRoot.appendChild(template.content.cloneNode(true));
 
-    fetch(DATA_FOR_OCGOTRING)
-      .then((response) => response.json())
-      .then((sites) => {
-        // Find the current site in the data
-        const matchedSiteIndex = sites.findIndex(
-          (site) => site.websiteurl === thisSite
-        );
-        const matchedSite = sites[matchedSiteIndex];
+        const thisSite = this.getAttribute("site");
 
-        let prevSiteIndex = matchedSiteIndex - 1;
-        if (prevSiteIndex === -1) prevSiteIndex = sites.length - 1;
+        fetch("https://github.com/asteriddle/ocgotchi/raw/main/Scripts/webringmembers.json")
+            .then((response) => response.json())
+            .then((sites) => {
+                // Find the current site in the data
+                const matchedSiteIndex = sites.findIndex(
+                    (site) => site.url === thisSite
+                );
+                const matchedSite = sites[matchedSiteIndex];
 
-        let nextSiteIndex = matchedSiteIndex + 1;
-        if (nextSiteIndex > sites.length) nextSiteIndex = 0;
+                let prevSiteIndex = matchedSiteIndex - 1;
+                if (prevSiteIndex === -1) prevSiteIndex = sites.length - 1;
 
-        const randomSiteIndex = this.getRandomInt(0, sites.length - 1);
+                let nextSiteIndex = matchedSiteIndex + 1;
+                if (nextSiteIndex >= sites.length) nextSiteIndex = 0;
+
+                const randomSiteIndex = this.getRandomInt(0, sites.length - 1);
 
         const cp = `
 <div class="OCGOT-home" style="background-image:url('${matchedSite.homeurl}'); height:200px; width: 200px;">
@@ -101,7 +99,7 @@ class OCGOTRing extends HTMLElement {
         `;
 
         this.shadowRoot
-          .querySelector("#copy")
+          .querySelector("#OCGOTringcopy")
           .insertAdjacentHTML("afterbegin", cp);
       });
   }
