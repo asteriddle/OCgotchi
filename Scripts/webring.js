@@ -47,7 +47,7 @@ font-family: "MS PGothic", sans-serif;
 
 </style>
 
-<div class="ocgotringcopy">
+<div id="ocgotringcopy">
 
 </div>`;
 
