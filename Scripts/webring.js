@@ -42,12 +42,13 @@ template.innerHTML = `
 
 .OCGOT-name {
 font-family: "MS PGothic", sans-serif;
-	text-shadow: 1px 1px 1px rgb(255, 255, 255);
+font-weight:bold;
+text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 </style>
 
-<div id="ocgotringcopy">
+<div id="ocgotringcopy" style="display:block">
 
 </div>`;
 
