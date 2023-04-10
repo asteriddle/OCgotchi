@@ -111,4 +111,4 @@ class OCGOTRing extends HTMLElement {
   }
 }
 
-window.customElements.define("ocgot-css", OCGOTRing);
+window.customElements.define("ocgotchi-ring", OCGOTRing);
