@@ -47,7 +47,7 @@ font-family: "MS PGothic", sans-serif;
 
 </style>
 
-<div class="OCGOTringcopy">
+<div class="ocgotringcopy">
 
 </div>`;
 
@@ -100,7 +100,7 @@ class OCGOTRing extends HTMLElement {
         `;
 
         this.shadowRoot
-          .querySelector("#OCGOTringcopy")
+          .querySelector("#ocgotringcopy")
           .insertAdjacentHTML("afterbegin", cp);
       });
   }
