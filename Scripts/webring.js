@@ -48,7 +48,7 @@ text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 
 </style>
 
-<div id="ocgotringcopy" style="display:block">
+<div id="ocgotringcopy" style="display:block;height:215;">
 
 </div>`;
 
