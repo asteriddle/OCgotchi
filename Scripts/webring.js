@@ -32,7 +32,7 @@ template.innerHTML = `
 .OCGOT-tooltip .OCGOT-tooltiptext::after {
   content: " ";
   position: absolute;
-  top: 47%; /* At the bottom of the tooltip */
+  top: 27px; /* At the bottom of the tooltip */
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
@@ -40,7 +40,7 @@ template.innerHTML = `
   border-color: black transparent transparent transparent;
 }
 
-OCGOT-name {
+.OCGOT-name {
 font-family: "MS PGothic", sans-serif;
 	text-shadow: 1px 1px 1px rgb(255, 255, 255);
 }
@@ -81,11 +81,11 @@ class OCGOTRing extends HTMLElement {
         const cp = `
 <div class="OCGOT-home" style="background-image:url('${matchedSite.homeurl}'); height:200px; width: 200px;">
           <span class="OCGOT-name" style="position:relative;left:70px;top:40px">${matchedSite.sitename}</span>
-          <div class="OCGOT-tooltip" style="position:relative; bottom:30px;">
+          <div class="OCGOT-tooltip" style="position:relative; top:37px;">
           <span class="OCGOT-tooltiptext" style="display:inline-block;">${matchedSite.websiteblurb}</span>
-          <img class="OCGOT-character" style="position:relative;left:55px;" src="${matchedSite.charurl}">
+          <img class="OCGOT-character" style="position:relative;display:block;" src="${matchedSite.charurl}">
           </div>
-          <div class="OCGOT-buttons" style="position:relative;left:65px;bottom:30px">
+          <div class="OCGOT-buttons" style="position:relative;left:65px;top:35px;display: block;">
           <a href="${sites[prevSiteIndex].websiteurl}" title="Previous"><img src="${matchedSite.prevbutton}"></a>
           <a href="${sites[randomSiteIndex].websiteurl}" title="Wildcard!"><img src="${matchedSite.randombutton}"></a>
             <a href="${sites[nextSiteIndex].websiteurl}" title="Next"><img src="${matchedSite.nextbutton}"></a>
@@ -93,10 +93,10 @@ class OCGOTRing extends HTMLElement {
           </div>
           <div class="OCGOT-charms">
           <iframe src="${matchedSite.charm1}" style="border-style:none; display:block; position:relative; margin-bottom:-190px; bottom:190px; margin-left:165px; max-width:75px;" scrolling="no"></iframe>
-          <iframe src="${matchedSite.charm2}" style="border-style:none; display:block; position:relative; margin-bottom:-190px; bottom:190px; margin-left:165px; max-width:75px;" scrolling="no"></iframe>
+          <iframe src="${matchedSite.charm2}" style="border-style:none; display:block; position:relative; margin-bottom:-190px; bottom:125px; margin-left:165px; max-width:75px;" scrolling="no"></iframe>
           </div>
           <br><br>
-          <div class="OCGOT-masterlink" style="display:inline-block; position:relative; margin-left:63px"><a href="https://asteriddle.github.io/ocgotchi/">OCGotchi!</a></div>
+          <div class="OCGOT-masterlink" style="display:inline-block; position:relative; margin-left:63px;top: 30px;"><a href="https://asteriddle.github.io/ocgotchi/">OCGotchi!</a></div>
         `;
 
         this.shadowRoot
