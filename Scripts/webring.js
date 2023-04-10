@@ -1,14 +1,15 @@
 const template = document.createElement("template");
+
 template.innerHTML = `
 <style>
 
-/* Tooltip container */
+
 .OCGOT-tooltip {
   display: inline-block;
   position: relative;
 }
 
-/* Tooltip text */
+
 .OCGOT-tooltip .OCGOT-tooltiptext {
   visibility: hidden;
   background-color: black;
@@ -22,7 +23,7 @@ template.innerHTML = `
   transition: opacity 1s;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
+
 .OCGOT-tooltip:hover .OCGOT-tooltiptext {
   visibility: visible;
   opacity: 1;
@@ -60,7 +61,7 @@ class OCGOTRing extends HTMLElement {
 
         const thisSite = this.getAttribute("site");
 
-        fetch("https://github.com/asteriddle/ocgotchi/raw/main/Scripts/webringmembers.json")
+        fetch("https://asteriddle.github.io/ocgotchi/Scripts/webringmembers.json")
             .then((response) => response.json())
             .then((sites) => {
                 // Find the current site in the data
